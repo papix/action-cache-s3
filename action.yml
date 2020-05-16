@@ -1,0 +1,16 @@
+name: 'action-cache-s3'
+description: 'Cache artifacts using S3'
+author: 'papix'
+inputs:
+  bucket:
+    required: true
+  key:
+    required: true
+  path:
+    required: true
+outputs:
+  cache-hit:
+runs:
+  using: 'node12'
+  main: 'dist/restore/index.js'
+  post: 'dist/save/index.js'
