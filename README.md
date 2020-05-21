@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: papix/action-cache-s3@master
+    - uses: papix/action-cache-s3@v0.0.1
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
