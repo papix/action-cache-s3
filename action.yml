@@ -10,6 +10,7 @@ inputs:
     required: true
 outputs:
   cache-hit:
+    description: 'A boolean value to indicate an exact match was found for the key'
 runs:
   using: 'node12'
   main: 'dist/restore/index.js'
